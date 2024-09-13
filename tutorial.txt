@@ -36,6 +36,8 @@ git config --global user.email "seuemail@email.com"
 git clone url_do_repositório 
 git add . (adiciona ao repositório local)
 git commit -m "tutorial" (ducumentar alterações)
+git status
+git pull (sincronuzar as informações)
 git push (envia ao repositório)
 
 Gerar token GitHub
@@ -43,3 +45,23 @@ Gerar token GitHub
 2) Developer Settings
 3) Token classic
 4) Gerar o token selecionando tudo, guardar o token
+
+________________________________________________
+Boas práticas na programação
+1) Cabeçalho de documentação
+/**
+    Nome do projeto
+    descrição de classe ou função
+    @author Gustavo Nunes Bispo
+    @version 1.0
+*/
+
+________________________________________________
+Node - Plataforma de execução do JavaScript fora do browser
+Sempre usar LTS
+
+Comandos básicos
+    node -v (varsão)
+    npm -v (versão do npm)
+    npm ls (pacotes)
+    npm init (iniciar novo projeto em JavaScript) = package.json (JavaScript Object Notation)
