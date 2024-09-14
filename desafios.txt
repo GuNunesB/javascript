@@ -1,0 +1,3 @@
+Desafio 1: "A Hora do Código"
+code.org
+Fazer o desafio "A Dora do Código", imprimir o certificado, postar no Linkedin e marcar o professor(caso não tenha mostrar ao professor)
