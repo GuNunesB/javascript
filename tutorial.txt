@@ -116,6 +116,11 @@ Existem 3 tipos de variáveis:
 string -> todo tipo de caracteres
 number -> números inteiros e não inteiros
 boolean -> true | false
+
+ATENÇÃO: no JS uma variável pode ser criada com "let" ou "var"
+
+"var" é obsoleto e inseguro, use o "let"
+
 ________________________________________________
 
 Comandos JavaScript (SINTAXE)
