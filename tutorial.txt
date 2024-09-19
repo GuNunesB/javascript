@@ -49,7 +49,10 @@ Gerar token GitHub
 ________________________________________________
 
 GitHub Ordem de Salvamento:
-    Antes: criar repositório e clonar (git clone + (botão direito)) no git bash here
+    Antes: 
+    . configurar o git com email (git config --global user.email) e seu nome de usuário (git config --global user.email "seuemail@email.com")
+    . criar repositório no GitHub;
+    . clonar (git clone + (botão direito)) no git bash here
 	1) git status
 	2) git add . 
 	3) git status
