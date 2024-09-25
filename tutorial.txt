@@ -58,8 +58,8 @@ GitHub Ordem de Salvamento:
 	3) git status
 	4) git commit -m"documentar"
 	5) git status
-	6) git pull (sincronuzar as informações)
-	7) git push (envia ao repositório)
+	6) git push (envia ao repositório)
+	7) git pull (sincronuzar as informações)
 ________________________________________________
 
 Boas práticas na programação
@@ -79,6 +79,18 @@ Regras (clean code)
 - quando declarar dois nomes usar a tecnica do camelo (camel case)
 Exemplo
 nomecliente -> nomecliente
+________________________________________________
+MANDAMENTOS DA PROGRAMAÇÃO
+
+1) UX (User eXperience) - desenvolver sempre pensando na experiência do usuário
+Vídeo: <https://www.youtube.com/watch?v=Z1GNW_woXI0>
+
+2) Usar o mínimo possível de código (caracteres[lembra do marcapasso])
+
+3) Entender o problema, o objetivo. Não adianta tentar codar sem saber o objetivo
+Algoritmo ("Receita de Bolo")
+- variáveis 
+- entrada - processamento - saída
 ________________________________________________
 
 Comandos do MS-DOS
