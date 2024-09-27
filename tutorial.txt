@@ -108,6 +108,8 @@ Comandos básicos
     npm -v (versão do npm)
     npm ls (pacotes)
     npm init (iniciar novo projeto em JavaScript) = package.json (JavaScript Object Notation)
+    npm i nome_pacote (instala novo pacote)
+    npm r nome_pacote (remover pacote)
 ________________________________________________
 
 Variaveis e Constantes

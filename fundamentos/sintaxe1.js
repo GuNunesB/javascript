@@ -1,19 +1,39 @@
 /**
- * Sintaxe básica da linguagem JS (JavaScript)
- * @author Gustavo Nunes Bispo
+ * Sintaxe básica da linguagem JS
+ * @author Professor José de Assis 
  */
 
-// Limpar tela do console
+// Limpar a tela do console
 console.clear()
 
-// JS - Sentença
-console.log("Hello Word")
+// JS - Sentença e ; opcional
+console.log ("Hello World")
 
-// Concatenação (unir textos e variáveis)
-let nome = "Gustavo Nunes"
+let nome = "José de Assis"
+let idade = 56
+let altura = 1.63
+// typeof() é usado para identificar o tipo de variável
+console.log(typeof(nome))
+console.log(typeof(idade))
+console.log(typeof(altura))
+
+// identificando variáveis inteiras e não inteiras
+//console.log(Number.inInteger(idade))
+//console.log(Number.inInteger(altura))
+
+// concatenação (unir textos e variáveis)
 console.log(`Nome: ${nome}`)
-console.log("Nome: " + nome) //não recomendado
+console.log("Nome: " + nome) // não recomendado
 
-// Arredondamento de casas decimais
+
+// arredondamento (casas decimais)
 let media = 5.789
 console.log(`Média: ${media.toFixed(1)}`)
+
+// particularidades do JS
+console.log(10/0)
+console.log(0.5 + 0.5)
+console.log(0.1 + 0.2)
+console.log("3" + 2)
+console.log("3" - 2)
+console.log("3x" - 2)
