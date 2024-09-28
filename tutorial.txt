@@ -78,7 +78,7 @@ Regras (clean code)
 - constantes e variáveis não iniciam com número
 - quando declarar dois nomes usar a tecnica do camelo (camel case)
 Exemplo
-nomecliente -> nomecliente
+nome cliente -> nomecliente
 ________________________________________________
 MANDAMENTOS DA PROGRAMAÇÃO
 
@@ -104,7 +104,7 @@ Node - Plataforma de execução do JavaScript fora do browser
 Sempre usar LTS
 
 Comandos básicos
-    node -v (varsão)
+    node -v (versão)
     npm -v (versão do npm)
     npm ls (pacotes)
     npm init (iniciar novo projeto em JavaScript) = package.json (JavaScript Object Notation)
