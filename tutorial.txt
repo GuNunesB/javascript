@@ -147,3 +147,19 @@ Console.clear() -> limpa tela do console
 const -> criar declarar constante
 let -> criar variável
 typeof() -> verificar o tipo de variável
+________________________________________________
+Estruturas de controle
+- condicionais
+- laços de repetições
+
+Estruturas de controle condicionais
+
+if () {
+    //condição verdadeira
+}
+
+if () {
+    //condição verdadeira
+}else{
+    //condição falsa
+}

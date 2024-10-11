@@ -24,3 +24,9 @@ media = (num1 + num2 + num3) / 3
  
 // saída
 console.log(`Media: ${media.toFixed(1)}`.rainbow)
+
+if (media < 5) {
+    console.log("Aprovado".blue)
+}else {
+    console.log("Reprovado".red)
+}
