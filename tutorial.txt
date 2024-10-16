@@ -154,12 +154,24 @@ Estruturas de controle
 
 Estruturas de controle condicionais
 
+1)
 if () {
     //condição verdadeira
 }
 
+2)
 if () {
     //condição verdadeira
 }else{
     //condição falsa
 }
+
+3)
+if (1) {
+    //condição verdadeira
+}else if (2) {
+    //condição falsa
+}else {
+    //condição falsa
+}
+obs: nessa estrutura o else é opcional, porém se indicado caso não haja nenhuma verdadeira ele executa o else
