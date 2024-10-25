@@ -175,3 +175,35 @@ if (1) {
     //condição falsa
 }
 obs: nessa estrutura o else é opcional, porém se indicado caso não haja nenhuma verdadeira ele executa o else
+
+switch case (uso de variável numérica(número inteiro))
+
+switch (variável) {
+    case 1:
+        //código caso o valor da variavel seja X
+        break
+    case 2:
+        //código caso o valor da variavel seja Y
+        break
+    case 3: 
+        //código caso o valor da variavel seja Z
+        break
+    default:
+        //opcional
+        //só será executado caso não seja uma das sentenças
+}
+
+Laços de repetições
+
+for (let i = 1; i < 10; i++) {
+
+}
+
+// Repetições definidas
+// let i = 1 (início)
+// i < 10 (condição)
+
+Uso do laço for
+1) Percorrer uma estrutura de dados
+2) Simplificação de código
+3) Fazer cálculos levando em conta a variável interna do laço
