@@ -222,3 +222,34 @@ ________________________________________________
 Executando o JavaScript junto ao HTML5
 - Execução interna no HTML5;
 - Link com um documento JS;
+
+________________________________________________
+-----POO (Programação Orientada a Objetos)------
+
+- Objeto -> estrutura de dados
+
+- Pilares do POO
+    . Habstração;
+    . Herança;
+    . Polimorfismo;
+    . Encapsulamento;
+
+- Conceito relacionado a estrutura de dados:
+    . CRUD(Create[criar], Read[ler], Update[modificar] e  Delete[excluir]):
+        São 4 operações básicas para reaizar com a estrutura de dados.
+
+Classe (biologia [mamíferos])
+Lingua Portuguesa:
+Objeto (substantivo [])
+Atributo (adjetivo)
+Métodos (verbos)
+________________________________________________
+/**
+ * @author Gustavo Nunes Bispo
+ * _____________________________
+ * Meu Método de Comentar:
+ * * = Observações;
+ * ? = Dúvida para perquisar/perguntar;
+ * ! = Modificar/Adicionar código;
+ * TODO: = Introdução, Resumo e/ou Conclusão do tema;
+*/
