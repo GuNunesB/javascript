@@ -1,6 +1,5 @@
 /**
- * Fundamentos da POO
- * Abstração, Herança e Polimorfismo
+ * Fundamentos da POO - Abstração, Herança e Polimorfismo
  * @author Gustavo Nunes Bispo
  * _____________________________
  * Meu Método de Comentar:

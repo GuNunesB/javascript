@@ -229,9 +229,12 @@ ________________________________________________
 - Objeto -> estrutura de dados
 
 - Pilares do POO
+    // Reutilização
     . Habstração;
     . Herança;
     . Polimorfismo;
+
+    // Segurança
     . Encapsulamento;
 
 - Conceito relacionado a estrutura de dados:
@@ -243,6 +246,12 @@ Lingua Portuguesa:
 Objeto (substantivo [])
 Atributo (adjetivo)
 Métodos (verbos)
+
+- Classe modelo (abstração - herança - polimorfismo)
+    . Bibliotecas (nativas ou não)
+    . Criada pelo usuário usando class
+
+    OBS: O ponto (".") é usado para acessar atributos e métodos da classe modelo
 ________________________________________________
 /**
  * @author Gustavo Nunes Bispo
