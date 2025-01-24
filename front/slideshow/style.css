@@ -3,26 +3,30 @@
     padding: 0;
 }
 
-.container {
+.Container {
     max-width: 1080px;
     margin: 0 auto;
 }
 
-.container img {
+img {
     max-width: 100%;
 }
 
-/* Classes manipuladas pelo js */
+/* Efeito deslizar (transform) com fade (opacity) */
 
-#slide {
+/* Configuração inicial do slide */
+#slide {      
     transition: transform 1s ease-in-out, opacity 1s ease-in-out;
 }
 
-#slide.SlideEsq {
-    transform: translateX(-100%);
+/* slide de entrada */
+#slide.slideIn {
+    transform: translateX(-100%); /* 0  translateY */
     opacity: 0;
 }
-#slide.SlideDir {
-    transform: translateX(0);
+
+/* slide de saída */
+#slide.slideOut {
+    transform: translateX(0); /* translateY */
     opacity: 1;
 }
