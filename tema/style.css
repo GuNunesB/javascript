@@ -1,0 +1,14 @@
+/* color-scheme: light dark = auto */
+html {
+    color-scheme: light dark;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    padding-top: 30px;
+    width: max-content;
+    margin: 0 auto;
+}
