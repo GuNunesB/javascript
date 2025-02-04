@@ -1,0 +1,14 @@
+.caixa {
+    width: 600px;
+}
+
+.cabecalho {
+    width: 100vw;
+    height: auto;
+    background: #131313;
+}
+
+.imagem {
+    width: 300px;
+    height: 300px;
+}
