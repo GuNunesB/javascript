@@ -19,12 +19,17 @@ function validarEmail() {
 
 // Validação de CPF
 function validarCPF() {
-    let cpf = document.getElementById('inputAddress').value.replace(/\D/g, ''); // Remove pontos e traços
-    let cpfInput = document.getElementById('inputAddress');
+    let cpfInput = document.getElementById('cpf');
+    let cpfErro = document.getElementById('cpfErro');
+    let cpf = cpfInput.value.replace(/\D/g, ''); // Remove caracteres não numéricos
+
+    // Resetando mensagens e estilos
+    cpfErro.textContent = "";
+    cpfInput.style.border = "";
 
     if (cpf.length !== 11 || /^(\d)\1+$/.test(cpf)) {
-        alert('CPF inválido! Insira um CPF válido.');
-        cpfInput.focus();
+        cpfErro.textContent = "CPF inválido! Insira um CPF válido.";
+        cpfInput.style.border = "2px solid red";
         return false;
     }
 
@@ -33,8 +38,8 @@ function validarCPF() {
     resto = (soma * 10) % 11;
     if (resto === 10 || resto === 11) resto = 0;
     if (resto !== parseInt(cpf[9])) {
-        alert('CPF inválido!');
-        cpfInput.focus();
+        cpfErro.textContent = "CPF inválido!";
+        cpfInput.style.border = "2px solid red";
         return false;
     }
 
@@ -43,22 +48,32 @@ function validarCPF() {
     resto = (soma * 10) % 11;
     if (resto === 10 || resto === 11) resto = 0;
     if (resto !== parseInt(cpf[10])) {
-        alert('CPF inválido!');
-        cpfInput.focus();
+        cpfErro.textContent = "CPF inválido!";
+        cpfInput.style.border = "2px solid red";
         return false;
     }
 
+    cpfErro.textContent = "CPF válido!";
+    cpfErro.style.color = "green";
+    cpfInput.style.border = "2px solid green";
     return true;
 }
 
+
 // Validação de CEP
 function buscarEndereco() {
-    let cep = document.getElementById('cep').value.replace(/\D/g, ''); // Remove caracteres não numéricos
     let cepInput = document.getElementById('cep');
+    let cepErro = document.getElementById('cepErro');
+    let cep = cepInput.value.replace(/\D/g, ''); // Remove caracteres não numéricos
+
+    // Resetando mensagens e estilos
+    cepErro.textContent = "";
+    cepErro.style.color = "red";
+    cepInput.style.border = "";
 
     if (cep.length !== 8) {
-        alert('CEP inválido! Insira um CEP válido com 8 dígitos.');
-        cepInput.focus();
+        cepErro.textContent = "CEP inválido! Insira um CEP válido com 8 dígitos.";
+        cepInput.style.border = "2px solid red";
         return;
     }
 
@@ -68,20 +83,26 @@ function buscarEndereco() {
         .then(response => response.json())
         .then(dados => {
             if (dados.erro) {
-                alert('CEP não encontrado!');
+                cepErro.textContent = "CEP não encontrado!";
+                cepInput.style.border = "2px solid red";
                 return;
             }
+
+            // Preenche os campos com os dados do CEP
             document.getElementById('logradouro').value = dados.logradouro || '';
             document.getElementById('bairro').value = dados.bairro || '';
             document.getElementById('cidade').value = dados.localidade || '';
             document.getElementById('uf').value = dados.uf || '';
+
+            // Exibe sucesso
+            cepErro.textContent = "CEP válido!";
+            cepErro.style.color = "green";
+            cepInput.style.border = "2px solid green";
         })
-        .catch(error => console.error('Erro ao buscar o endereço:', error));
+        .catch(error => {
+            console.error('Erro ao buscar o endereço:', error);
+            cepErro.textContent = "Erro ao consultar o CEP.";
+            cepInput.style.border = "2px solid red";
+        });
 }
 
-// Adiciona validações no envio do formulário
-document.querySelector('form').addEventListener('submit', function (event) {
-    if (!validarEmail() || !validarCPF()) {
-        event.preventDefault(); // Impede o envio se algum campo for inválido
-    }
-});

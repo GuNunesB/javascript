@@ -17,48 +17,44 @@
             <div class="form-row">
                 <div class="form-group col-md-8">
                     <label for="inputAddress">Nome</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="Maria Silva Santos" required>
+                    <input type="text" class="form-control" id="inputAddress" required>
                 </div>
 
                 <div class="form-group col-md-4">
                     <label for="inputAddress">Telefone</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="(00) 00000-0000" required>
+                    <input type="text" class="form-control" id="inputAddress" required>
                 </div>
             </div>
 
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="inputEmail4">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="exemplo123@email.com"
-                        required>
+                    <input type="email" class="form-control" id="inputEmail4" required>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="inputPassword4">Senha</label>
-                    <input type="password" class="form-control" id="inputPassword4" placeholder="********" required>
+                    <input type="password" class="form-control" id="inputPassword4" required>
                 </div>
             </div>
 
             <div class="form-row">
-                <div class="form-group col-md-8">
-                    <label for="inputAddress">Logradouro</label>
-                    <input type="text" class="form-control" id="logradouro" placeholder="Logradouro, 000">
+                <div class="form-group col-md-3">
+                    <label for="cep">CEP</label>
+                    <input type="text" class="form-control" id="cep" onblur="buscarEndereco()">
+                    <p id="cepErro" class="text-danger small mt-1"></p> <!-- Mensagem de erro -->
                 </div>
-                <div class="form-group col-md-4">
-                    <label for="inputAddress">Bairro</label>
-                    <input type="text" class="form-control" id="bairro" placeholder="Jardim..., C.H.., Campos...">
-                </div>
-            </div>
 
-            <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="inputCity">Cidade</label>
-                    <input type="text" class="form-control" id="cidade" placeholder="São Paulo">
+                    <input type="text" class="form-control" id="cidade">
                 </div>
+                
                 <div class="form-group col-md-3">
                     <label for="inputEstado">UF</label>
                     <select id="uf" class="form-control">
+                        <option value="NI">...</option>
                         <optgroup label="Região Sudeste">
-                            <option value="SP" selected>São Paulo</option>
+                            <option value="SP">São Paulo</option>
                             <option value="RJ">Rio de Janeiro</option>
                             <option value="MG">Minas Gerais</option>
                             <option value="ES">Espírito Santo</option>
@@ -96,32 +92,29 @@
                         </optgroup>
                     </select>
                 </div>
-                <div class="form-group col-md-3">
-                    <label for="inputCEP">CEP</label>
-                    <input type="text" class="form-control" id="cep" placeholder="00000-000" onblur="buscarEndereco()"
-                        required>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-8">
+                    <label for="inputAddress">Logradouro</label>
+                    <input type="text" class="form-control" id="logradouro">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputAddress">Bairro</label>
+                    <input type="text" class="form-control" id="bairro">
                 </div>
             </div>
 
             <div class="form-row">
                 <div class="form-group col-md-4">
-                    <label for="inputAddress">CPF</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="000.000.000.00"
-                        onblur="testaCPF(strCPF)">
+                    <label for="cpf">CPF</label>
+                    <input type="text" class="form-control" id="cpf" onblur="validarCPF()">
+                    <p id="cpfErro" class="text-danger small mt-1"></p>
                 </div>
+                             
                 <div class="form-group col-md-8">
                     <label for="inputAddress">Complemento</label>
-                    <input type="text" class="form-control" id="inputAddress"
-                        placeholder="Casa 1, Apartamento 3, Predio D...">
-                </div>
-            </div>
-
-            <div class="form-group">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck" required>
-                    <label class="form-check-label" for="gridCheck">
-                        Aceito os termos e condições.
-                    </label>
+                    <input type="text" class="form-control" id="inputAddress">
                 </div>
             </div>
             <button type="reset" class="btn btn-outline-warning">Apagar Infos.</button>
