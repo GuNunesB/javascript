@@ -60,6 +60,9 @@ GitHub Ordem de Salvamento:
 	5) git status
 	6) git push (envia ao repositório)
 	7) git pull (sincronuzar as informações)
+        8) git config --global --unset user.name
+        9) git config --global --unset user.email
+
 ________________________________________________
 
 Boas práticas na programação
